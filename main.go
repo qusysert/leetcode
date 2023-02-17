@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 //
 //import (
 //	"bufio"
@@ -61,5 +63,5 @@ package main
 //}
 
 func main() {
-	twoSum([]int{3, 2, 4}, 6)
+	fmt.Println(lengthOfLongestSubstring("a"))
 }
