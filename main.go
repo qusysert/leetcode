@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 //
 //import (
 //	"bufio"
@@ -61,5 +63,5 @@ package main
 //}
 
 func main() {
-	singleNumber([]int{1, 2, 3, 2, 3})
+	fmt.Println(summaryRanges([]int{}))
 }
