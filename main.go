@@ -1,7 +1,5 @@
 package main
 
-import "fmt"
-
 //
 //import (
 //	"bufio"
@@ -63,5 +61,6 @@ import "fmt"
 //}
 
 func main() {
-	fmt.Println(lengthOfLongestSubstring("a"))
+	h := ListNode{1, &ListNode{1, nil}}
+	reverseList(&h)
 }

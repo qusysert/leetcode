@@ -1,7 +1,7 @@
 package main
 
 func isValid(s string) bool {
-	if len(s) == 0 || len(s) == 1 {
+	if len(s) == 0 || len(s) == 1 || len(s)%2 != 0 {
 		return false
 	}
 	var stack Stack

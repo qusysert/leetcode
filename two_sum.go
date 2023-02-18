@@ -1,6 +1,8 @@
 package main
 
+// for NOT sorted
 func twoSum(nums []int, target int) []int {
+	// val - position
 	met := make(map[int]int)
 	for i, v := range nums {
 		if met[target-v] != 0 {
@@ -13,6 +15,7 @@ func twoSum(nums []int, target int) []int {
 }
 
 // for sorted
+
 //func twoSum(nums []int, target int) []int {
 //	l := 0
 //	r := len(nums) - 1
