@@ -61,6 +61,5 @@ package main
 //}
 
 func main() {
-	h := ListNode{1, &ListNode{1, nil}}
-	reverseList(&h)
+	singleNumber([]int{1, 2, 3, 2, 3})
 }
