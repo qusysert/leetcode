@@ -2,15 +2,15 @@ package main
 
 func isIsomorphic(s string, t string) bool {
 
-	st := map[byte]int{}
-	ts := map[byte]int{}
+	sMap := map[byte]int{}
+	tMap := map[byte]int{}
 
 	for i := range s {
-		if st[s[i]] != ts[t[i]] {
+		if sMap[s[i]] != tMap[t[i]] {
 			return false
 		} else {
-			st[s[i]] = i + 1
-			ts[t[i]] = i + 1
+			sMap[s[i]] = i + 1
+			tMap[t[i]] = i + 1
 		}
 	}
 
