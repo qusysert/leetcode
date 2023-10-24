@@ -1,6 +1,14 @@
+// https://leetcode.com/problems/find-all-anagrams-in-a-string/
 package main
 
-import "reflect"
+import (
+	"fmt"
+	"reflect"
+)
+
+func main() {
+	fmt.Println(findAnagrams("cbaebabacd", "abc"))
+}
 
 func findAnagrams(s string, p string) []int {
 	if len(p) > len(s) {
