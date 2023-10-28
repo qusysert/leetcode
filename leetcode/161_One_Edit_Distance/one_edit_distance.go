@@ -1,4 +1,5 @@
-package main
+// https://wentao-shao.gitbook.io/leetcode/string/161.one-edit-distance
+package _61_One_Edit_Distance
 
 func oneEditDistance(s string, t string) bool {
 	if len(t) > len(s) {

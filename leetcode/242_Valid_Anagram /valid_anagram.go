@@ -1,4 +1,5 @@
-package main
+// https://leetcode.com/problems/valid-anagram/
+package _42_Valid_Anagram_
 
 func IsAnagram(s string, t string) int {
 	chars := make(map[rune]int)

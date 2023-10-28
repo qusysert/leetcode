@@ -1,4 +1,5 @@
-package main
+// https://leetcode.com/problems/trapping-rain-water/
+package _2_Trapping_Rain_Water_
 
 func trap(height []int) int {
 	if len(height) < 3 {

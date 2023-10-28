@@ -1,4 +1,5 @@
-package main
+// https://leetcode.com/problems/valid-parentheses/description/
+package _0_Valid_Parentheses_
 
 func isValid(s string) bool {
 	if len(s) == 0 || len(s) == 1 || len(s)%2 != 0 {

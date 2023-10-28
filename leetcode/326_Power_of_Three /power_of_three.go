@@ -1,4 +1,5 @@
-package main
+// https://leetcode.com/problems/power-of-three/
+package main_
 
 func isPowerOfThree(n int) bool {
 	num := float64(n)

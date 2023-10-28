@@ -1,4 +1,5 @@
-package main
+// https://leetcode.com/problems/two-sum/
+package __Two_Sum_
 
 // for NOT sorted
 func twoSum(nums []int, target int) []int {
