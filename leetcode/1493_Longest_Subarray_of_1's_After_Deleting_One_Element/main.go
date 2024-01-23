@@ -10,7 +10,7 @@ func main() {
 func longestSubarray(nums []int) int {
 	l := 0
 	r := 0
-	max := 0
+	maximum := 0
 	prevZero := 0
 	zeroCnt := 0
 	if nums[0] == 0 {
@@ -22,7 +22,7 @@ func longestSubarray(nums []int) int {
 		if nums[r] == 0 {
 			zeroCnt++
 			if zeroCnt <= 1 {
-				max = getMax(max, r-l+1)
+				maximum = getMax(maximum, r-l+1)
 				prevZero = r
 			} else {
 				l = prevZero + 1
@@ -30,13 +30,13 @@ func longestSubarray(nums []int) int {
 				prevZero = r
 			}
 		} else {
-			max = getMax(max, r-l+1)
+			maximum = getMax(maximum, r-l+1)
 		}
 	}
-	if max == 0 {
+	if maximum == 0 {
 		return 0
 	}
-	return max - 1
+	return maximum - 1
 }
 
 func getMax(a, b int) int {
