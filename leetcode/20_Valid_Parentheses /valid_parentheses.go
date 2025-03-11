@@ -7,9 +7,10 @@ func isValid(s string) bool {
 	}
 	var stack Stack
 	pair := make(map[string]string)
-	pair[string(')')] = string('(')
-	pair[string('}')] = string('{')
-	pair[string(']')] = string('[')
+	pair[")"] = "("
+	pair["}"] = "{"
+	pair["]"] = "["
+
 	for _, c := range s {
 		if c == '(' || c == '[' || c == '{' {
 			stack.Push(string(c))
@@ -21,6 +22,7 @@ func isValid(s string) bool {
 			}
 		}
 	}
+
 	if len(stack) == 0 {
 		return true
 	}
