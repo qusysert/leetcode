@@ -10,7 +10,7 @@ func sortedSquares(nums []int) []int {
 
 	for left <= right {
 		if math.Abs(float64(nums[left])) > math.Abs(float64(nums[right])) {
-			res[len(res)-1-cnt] = nums[left] * nums[left]
+			res[len(res)-1-cnt] = nums[left]
 			left++
 		} else {
 			res[len(res)-1-cnt] = nums[right] * nums[right]
