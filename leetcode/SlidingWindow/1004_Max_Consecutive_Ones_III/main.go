@@ -23,8 +23,7 @@ func longestOnes(nums []int, k int) int {
 			begin++
 		}
 
-		curLen := end - begin + 1
-		maxLen = max(maxLen, curLen)
+		maxLen = max(maxLen, end-begin+1)
 	}
 
 	return maxLen
