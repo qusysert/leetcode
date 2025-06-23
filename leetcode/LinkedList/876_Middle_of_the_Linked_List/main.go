@@ -8,18 +8,12 @@ package main
  * }
  */
 func middleNode(head *ListNode) *ListNode {
-	if head.Next == nil {
-		return head
-	}
-
 	slow := head
 	fast := head
 
-	for {
+	for fast != nil && fast.Next != nil {
 		fast = fast.Next.Next
-		if fast == nil || fast.Next == nil {
-			return slow.Next
-		}
 		slow = slow.Next
 	}
+	return slow
 }
