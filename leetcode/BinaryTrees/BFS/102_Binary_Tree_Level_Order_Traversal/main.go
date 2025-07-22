@@ -19,9 +19,6 @@ func levelOrder(root *TreeNode) [][]int {
 		cur := make([]int, 0, levelSize)
 		for range levelSize {
 			node := q.Pop()
-			if node == nil {
-				continue
-			}
 			cur = append(cur, node.Val)
 			if node.Left != nil {
 				q.Push(node.Left)
